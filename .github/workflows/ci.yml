@@ -12,3 +12,5 @@ jobs:
       - name: say Hello
         run: echo "Hello, World!"
     
+      - name: Run script
+        run: python app.py
