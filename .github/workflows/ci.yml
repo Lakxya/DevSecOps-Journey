@@ -16,3 +16,6 @@ jobs:
 
       - name: Show Files
         run: ls -la
+      
+      - name: run python script
+        run: python app.py
