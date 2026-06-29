@@ -1,16 +1,18 @@
-name: first CI pipeline
+name: Build Docker
+
 on:
-  pull_request:
+  push:
 
 jobs:
-  test:
+
+  build:
+
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout code
+
+      - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: say Hello
-        run: echo "Hello, World!"
-    
-      - name: Run script
-        run: python app.py
+      - name: Show Files
+        run: ls -la
