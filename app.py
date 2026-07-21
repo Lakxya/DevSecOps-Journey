@@ -12,3 +12,5 @@ c=a+b
 print("The sum of the two numbers is:", c)
 for i in range(5):
     print(i)
+for i in range(1, 6):
+    print(i*2)
